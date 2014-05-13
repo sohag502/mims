@@ -1,0 +1,90 @@
+              body{background-color: NavajoWhite;}
+
+                      p:first-letter
+                         {
+                        color:#ff0000;
+                        font-size:xx-large;
+                         }
+
+
+                        body{background: red url(Image.jpg);}
+
+
+                      p
+                      {
+                        font-size:40px;
+                        text-transform: capitalize;
+                        font-style:normal;
+                       }
+
+                       
+
+                       table
+                       {
+                       border:0px solid ;
+                       height: 20%;
+                       width: 35%;
+                       font-size: 20px;
+
+                       }
+
+
+                       th{border:2px solid skyblue;}
+
+
+                        .ss{
+                             font-style: italic;
+                             font-size: 30px;
+                             color:#cc0066;}
+
+                          #middle{padding:10px ;}
+                                  
+
+
+
+                             
+
+                             #bs{padding-right:  900px ;
+                                 padding-bottom: 1400px;
+
+                              }
+							 
+			
+
+
+
+
+                          
+                        
+			 back{
+
+                             border:0px solid pink;
+
+                             }
+
+                           
+                            div.none{
+                            font-size:20px;
+                                    }
+                           
+
+                           font:first-letter
+                            {
+                            color:#ff0000;
+                            font-size:xx-large;
+                            }
+
+                             i:link {color:black;}
+                          
+			     i:visited{color:black;}
+                          
+						  
+			      i:hover{
+                                  font-size:150%;
+                                  color: orchid;
+                                  background:aqua;}
+                          
+				 p.abu{width:auto;
+                                 height: auto;
+                                 color: red;
+				 position:left;}

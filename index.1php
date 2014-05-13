@@ -1,0 +1,201 @@
+<html>
+
+<head><style type="text/css">
+
+p:first-letter
+{
+color:red;
+font-size:xx-large;
+}
+
+
+#q{
+font-size:190%;
+}
+
+
+.aaaa{
+width:130px;
+background-color: green;
+margin-top: 25px;
+float:right;
+padding-top:2% 2% 2% 2%;
+}
+
+
+#fixed
+{
+padding-left:410px;
+}
+
+
+p{
+font-size:40px;
+text-transform:capitalize;
+font-style:normal;
+padding-left:36%;
+margin-top:20%;
+}
+
+
+.ss{
+font-style: italic;
+font-size: 30px;
+color:#cc0066;
+}
+
+
+font:first-letter
+{
+color:#ff0000;
+font-size:xx-large;
+}
+
+
+.asss{
+font-size:270%;
+padding-left:510px;
+}
+
+
+.a1
+{
+font-size: 190%;
+margin:40px 102px 40px -50px;
+width: 208px;
+}
+
+
+.a2
+{
+font-size: 190%;
+float: left;
+margin:-111.25px -98px -150px 190px;
+width: 208px;
+}
+
+
+.a111{
+width:221px;
+border:2px solid black;
+}
+
+
+.a11{
+padding-left:30%;
+padding-top:28px;
+}
+
+
+#fix{
+padding-left:8%;
+width:45%;
+}
+
+
+.none{
+padding-top: 240px;
+font-size:20px;
+}
+
+
+</style>
+<link rel="stylesheet" href="nivo-slider2.7.1/nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider2.7.1/nivo-slider/themes/pascal/pascal.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider2.7.1/nivo-slider/themes/orman/orman.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider2.7.1/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider2.7.1/nivo-slider/demo/style.css" type="text/css" media="screen" />
+
+
+
+</head>
+
+
+<body>
+                    
+  <div id="wrapper">
+    
+        <a href="http://dev7studios.com" id="dev7link" title="Go to dev7studios">dev7studios</a>
+
+        <div class="slider-wrapper theme-default">
+            <div class="ribbon"></div>
+            <div id="slider" class="nivoSlider">
+   
+      <?php
+	  
+            $con = mysql_connect("localhost","root","");
+            mysql_select_db("dms",$con);
+            $query="SELECT * FROM pic";
+            $result=mysql_query($query,$con);
+            while($row=mysql_fetch_array($result))
+            {
+
+           $id=$row['picture'];
+
+           echo"<img src='$id'>";
+
+          }
+
+ ?>
+           </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="nivo-slider2.7.1/nivo-slider/demo/scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="nivo-slider2.7.1/nivo-slider/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+					
+					
+					
+<div align="center"><div id="q"><?php include("header.php"); ?></div></div>
+
+<div class="aaaa">This website is for the wellfare of general people.People will be helped by this site...  </div>
+  
+<div id="shojib">
+
+<div class="asss"><p>Filled <font color="pink">One</font> <font color="green"/>or <font color="skyblue">more</font></p></div><br/></div><br/>
+                  
+<div id="fixed">
+
+<form action="dece.php" method="post">
+
+<div id="fix">
+
+<table>
+
+<div class="a1">Dieases<br/>
+<div class="a111"><input type="text"  size="27" name="diseases" spellcheck="true"/></div>
+</div>
+
+
+<div class="a2">Drug Name<br/>
+<div class="a111"><input type="text" size="27"  name="generic" spellcheck="true"/></div>
+</div>
+
+
+<div class="a11">
+<input type="submit" name="submit" value="Search">
+</div>
+
+
+ </table></div></form></div>
+
+<div class="none">
+
+<marquee behaviour="scroll" direction="right" onmouseover="this.stop()" onmouseout="this.start()">
+                       
+<?php include "autoqote.php"; ?>
+                       
+ </marquee>
+
+</div></body></html>
+
+
+
